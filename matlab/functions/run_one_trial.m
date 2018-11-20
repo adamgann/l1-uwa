@@ -151,7 +151,7 @@ function [berVec] = run_one_trial(hVec,pnSeq,gT,Params)
  
         % PCA filters
         equalization_l2 = exp(-1i*phi_l2)*w_l2pca'*rxMat.';
-        equalization_l1 = exp(1i*phi_l1)*w_l1pca'*rxMat.';
+        equalization_l1 = exp(-1i*phi_l1)*w_l1pca'*rxMat.';
 
         
         % Calculate SNR and BERs
